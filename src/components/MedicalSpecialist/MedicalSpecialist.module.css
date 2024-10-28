@@ -1,0 +1,35 @@
+.slide{
+    width: 200px;
+}
+.cardmain h3{
+    margin: 0;
+}
+.cardmain img{
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.container{
+    width: 90%;
+}
+.container img{
+    max-width: 300px;
+}
+
+
+.swipermain{
+    width: 100%;
+}
+.slideimage{
+    object-fit: contain;
+    
+}
+.slidermain{
+    max-width: 300px ;
+    margin-bottom: 30px;
+}
+
+
+  
+
+

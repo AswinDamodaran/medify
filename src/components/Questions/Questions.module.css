@@ -1,0 +1,21 @@
+.questionwrappermain{
+    width: 90%;
+}
+.questionwrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    object-fit: cover;
+}
+.heading{
+    color: #2AA7FF;
+}
+.heading h1{
+    color: #1B3C74;
+    margin: 0;
+}
+.heading h4{
+   margin: 0;
+}

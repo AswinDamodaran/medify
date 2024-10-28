@@ -1,0 +1,15 @@
+.herotext{
+    text-align: start;
+}
+.herotext h2{
+    font-weight: 500;
+}
+.herotext h1{
+    font-weight: 700;
+}
+.herotext h1 span{
+    color: #2AA7FF;
+}
+.herotext p{
+    color: #5C6169;
+}

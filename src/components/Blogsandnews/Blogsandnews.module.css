@@ -1,0 +1,29 @@
+.heading{
+    color: #2AA7FF;
+}
+.heading h1{
+    color: #1B3C74;
+    margin: 0;
+}
+.heading h4{
+    margin: 0;
+ }
+ .cardDetails{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    color: #77829D;
+    font-weight: 500;
+ }
+ .cardheading{
+    color: #1B3C74;
+    font-weight: 600;
+    text-align: start;
+ }
+ .docname{
+    display: flex;
+    gap: 20px;
+    color: #1B3C74;
+    font-weight: 600;
+ }

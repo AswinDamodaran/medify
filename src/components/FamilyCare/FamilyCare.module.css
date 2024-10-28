@@ -1,0 +1,31 @@
+.familymain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.familycards {
+  object-fit: cover;
+  display: flex;
+  gap: 30%;
+}
+.familytext {
+  text-align: start;
+}
+.familytext h1,
+.cardmain h1 {
+  color: #1b3c74;
+}
+.familytext p,
+.cardmain p {
+  color: #77829d;
+}
+
+.familytext h5 {
+  color: #2aa7ff;
+}
+.cardmain {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardrow:last-child{
+    margin-top: 60px;
+}

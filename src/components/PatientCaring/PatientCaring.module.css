@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+}
+.mainwrapper {
+  width: 90% !important;
+  text-align: start;
+  color: #1b3c74;
+}
+.mainwrapper h5 {
+  color: #2aa7ff;
+}
+.mainwrapper p {
+  color: #77829d;
+}
+.mainwrapper h1 span {
+  color: #2aa7ff;
+}

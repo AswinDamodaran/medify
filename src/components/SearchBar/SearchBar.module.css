@@ -1,0 +1,11 @@
+.searchbarWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+.inputField{
+    border: none;
+    
+}
+

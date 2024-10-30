@@ -8,7 +8,7 @@ import img6 from '../../images/specialisation/piscologist.svg'
 import img7 from '../../images/specialisation/primaryCare.svg'
 import img8 from '../../images/specialisation/xray.svg'
 import SpecialisationCard from './SpecialisationCard'
-import { Grid } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import styles from './Specialisation.module.css'
 
 function Specialisation() {
@@ -33,6 +33,7 @@ function Specialisation() {
                </Grid>
             ))}
         </Grid>
+        <Button sx={{marginRight:"50px",marginTop:"10px"}} variant='contained' >View all</Button>
     </div>
   )
 }

@@ -1,38 +1,52 @@
-.cardmain{
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #FFFFFF;
-    height: 180px;
-    padding-top: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    max-width: 250px;
-    
+.cardmain {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #ffffff;
+  height: 180px;
+  padding-top: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 250px;
 }
-.cardmain img{
-    object-fit: contain;
-    width: 70px;
+.cardlooking {
+  text-align: center;
+  background-color: #ffffff;
+  height: 180px;
+  padding-top: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 250px;
 }
-.cardmain p{
-    color: #ABB6C7;
+.cardmain img {
+  object-fit: contain;
+  width: 70px;
 }
-.specialMain{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
-    margin-top: 10px;
-
+.cardmain p {
+  color: #abb6c7;
 }
-.gridmain{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.specialMain {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    81deg,
+    #e7f0ff 9.01%,
+    rgba(232, 241, 255, 0.47) 89.11%
+  );
+  margin-top: 10px;
 }
-.specialMain h1{
-    color: #1B3C74;
+.gridmain {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.specialMain h1 {
+  color: #1b3c74;
+}
+.cardmain:hover,
+.cardlooking:hover {
+  border: 2px solid #2aa8ff;
+}

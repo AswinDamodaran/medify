@@ -13,7 +13,7 @@ import Herosection from '../components/Herosection/Herosection'
 function HomePage() {
   return (
     <div className={styles.homepagemain}>
-      <NavBar />
+      
       <Herosection/>
       <Advertisment />
       <Specialisation />

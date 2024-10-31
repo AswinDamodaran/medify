@@ -1,0 +1,26 @@
+.searchWrapper{
+    width: 100%;
+    font-family: "poppins";
+}
+  .blueBackground {
+    background: linear-gradient(91.75deg, #2AA7FF 1.4%, #0C8CE6 100%);
+    padding: 60px 0; /* Adjust padding as needed to create space around the search container */
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 110px;
+  }
+  
+  .searchContainer {
+    background-color: #fff;
+    padding: 24px;
+    width: 80%;
+    border-radius: 16px;
+    box-shadow: 6px 6px 35px 0px #1028511C;
+    transform: translateY(30px);
+  }
+  .banner{
+    object-fit: contain;
+    max-width: 363px;
+  }

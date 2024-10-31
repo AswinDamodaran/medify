@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Headercomp from "./components/header/Headercomp";
 import Downloadapp from "./components/Downloadapp/Downloadapp";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       >
         <CssBaseline />
         <Headercomp />
+        <NavBar />
         <Outlet />
         <Downloadapp />
         <Footer />

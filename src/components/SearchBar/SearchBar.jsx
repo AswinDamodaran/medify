@@ -13,6 +13,7 @@ import styles from "./SearchBar.module.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useSnackbar } from "notistack";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function SearchBar() {
   const navigate = useNavigate();
@@ -52,8 +53,8 @@ function SearchBar() {
 
   useEffect(() => {
     const fetchCities = async () => {
-      setCities([])
-      setForm((prev)=>({...prev,city: ""}))
+      setCities([]);
+      setForm((prev) => ({ ...prev, city: "" }));
       try {
         const res = await axios.get(
           `https://meddata-backend.onrender.com/cities/${form.state}`
@@ -63,10 +64,10 @@ function SearchBar() {
         enqueueSnackbar("could not fetch the Cities", { variant: "error" });
       }
     };
-    if(form.state!==""){
+    if (form.state !== "") {
       fetchCities();
     }
-  },[form.state]);
+  }, [form.state]);
 
   return (
     <Box
@@ -88,7 +89,7 @@ function SearchBar() {
         onChange={handleChange}
         startAdornment={
           <InputAdornment position="start">
-            <SearchIcon />
+            <LocationOnIcon />
           </InputAdornment>
         }
         sx={{
@@ -96,6 +97,10 @@ function SearchBar() {
           color: "#ABB6C7",
           width: "100%",
           textAlign: "start",
+          border: "none",
+          "& .MuiOutlinedInput-notchedOutline": {
+            border: "none",
+          },
         }}
       >
         <MenuItem disabled value="">
@@ -116,7 +121,7 @@ function SearchBar() {
         onChange={handleChange}
         startAdornment={
           <InputAdornment position="start">
-            <SearchIcon />
+            <LocationOnIcon />
           </InputAdornment>
         }
         sx={{
@@ -124,8 +129,11 @@ function SearchBar() {
           color: "#ABB6C7",
           width: "100%",
           textAlign: "start",
+          border: "none",
+          "& .MuiOutlinedInput-notchedOutline": {
+            border: "none",
+          },
         }}
-
       >
         <MenuItem disabled value="" selected>
           City

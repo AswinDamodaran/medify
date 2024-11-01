@@ -10,6 +10,7 @@ import styles from "./SearchPage.module.css";
 import icon from "../images/tickIcon.svg";
 import HospitalCard from "../components/HospitalCard/HospitalCard";
 import banner from "../images/banner.png";
+import BookingModal from "../components/BookingModal/BookingModal";
 
 function SearchPage() {
   const { enqueueSnackbar } = useSnackbar();
@@ -60,10 +61,9 @@ function SearchPage() {
     setIsModelOpen(true);
   };
 
-  const handleBooking = () => {};
-
   return (
     <div className={styles.searchWrapper}>
+      
       <Box minHeight={300} width="100%">
         <Box className={styles.blueBackground}>
           <Container maxWidth="lg" className={styles.searchContainer}>
@@ -105,19 +105,51 @@ function SearchPage() {
                     key={hospital["Hospital Name"]}
                     hospitals={hospital}
                     availableSlots={availableSlots}
-                    handleBooking={handleBooking}
+                    handleBooking={handleBookingModal}
                   />
                 ))}
+                {loading && (
+                  <Typography
+                    variant="h3"
+                    color="#1B3C74"
+                    bgcolor="#fff"
+                    p={3}
+                    borderRadius={2}
+                  >
+                    Loading...
+                  </Typography>
+                )}
+                {!state && (
+                  <Typography
+                    variant="h3"
+                    color="#1B3C74"
+                    bgcolor="#fff"
+                    p={3}
+                    borderRadius={2}
+                  >
+                    Please select a state and city 
+                  </Typography>
+                )}
               </Stack>
             </Grid>
             <Grid item xs={12} md={4}>
               <Stack>
-                <img className={styles.banner}  src={banner} alt="advertisment" />
+                <img
+                  className={styles.banner}
+                  src={banner}
+                  alt="advertisment"
+                />
               </Stack>
             </Grid>
           </Grid>
         </Stack>
       </Container>
+      <BookingModal
+      open={isModelOpen}
+      setOpen={setIsModelOpen}
+      bookingDetails={bookingDetails}
+      showSuccessMessage={setShowSuccess}
+      />
       <Questions />
     </div>
   );

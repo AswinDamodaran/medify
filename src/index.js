@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import HomePage from './Mainpages/HomePage';
 import SearchPage from './SearchPage/SearchPage';
+import MyBookings from './MyBookings/MyBookings';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "search",
         element: <SearchPage />,
+      },
+      {
+        path: "my-bookings",
+        element: <MyBookings />,
       }
     ],
   },

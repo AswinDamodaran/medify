@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import { startOfDay } from 'date-fns'
 import React, { useState } from 'react'
 import DaySelector from '../DaySelector/DaySelector'
+import TimeSlotPicker from "../TimePicker/TimePicker"
 
 function Calender({availableSlots,handleBooking,hospitals}) {
 
@@ -16,12 +17,12 @@ function Calender({availableSlots,handleBooking,hospitals}) {
     setSelected={setSelected}
     totalSlots={totalSlots}
     />
-    {/* <TimeSlotPicker
+    <TimeSlotPicker
     availableSlots={availableSlots}
     selected={selected}
     hospitals={hospitals}
     handleBooking={handleBooking}
-    /> */}
+    />
 </Box>
 
 

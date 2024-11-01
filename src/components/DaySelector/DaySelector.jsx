@@ -15,7 +15,7 @@ function DaySelector({ selected, setSelected, totalSlots }) {
 
   for (let i = 0; i < 7; i++) {
     dateItems.push(add(date, { days: i }));
-    console.log(dateItems);
+    // console.log(dateItems);
   }
   const customDateFormat = (day) => {
     if (isEqual(date, day)) {

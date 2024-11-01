@@ -133,10 +133,11 @@ function HospitalCard({
               <Chip
                 label={hospitals.bookingTime}
                 variant="outlined"
-                color="#2AA7FF"
+                
                 sx={{
                   borderRadius: 1,
                   fontSize: 14,
+                  color:"#2AA7FF"
                 }}
               />
               <Chip
@@ -145,6 +146,7 @@ function HospitalCard({
                 sx={{
                   borderRadius: 1,
                   fontSize: 14,
+                  color:"#01A400"
                 }}
                 label={format(new Date(hospitals.bookingDate), "dd MMMM yyyy")}
               />

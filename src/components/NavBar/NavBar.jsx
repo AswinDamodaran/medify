@@ -5,13 +5,22 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import styles from "./NavBar.module.css";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
   const [value, setValue] = useState("1");
+  const navigate=useNavigate()
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const HandleBookingClick=()=>{
+    navigate("/my-bookings")
+  }
+  const handleHospital=()=>{
+    navigate("/search")
+  }
 
   return (
     <div className={styles.navWrapper}>
@@ -23,7 +32,7 @@ function NavBar() {
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList onChange={handleChange} aria-label="navigation tabs">
               <Tab label="Find Doctors" value="1" />
-              <Tab label="Hospitals" value="2" />
+              <Tab onClick={handleHospital} label="Hospitals" value="2" />
               <Tab label="Medicines" value="3" />
               <Tab label="Surgeries" value="4" />
               <Tab label="Software for Provider" value="5" />
@@ -37,7 +46,7 @@ function NavBar() {
           <TabPanel value="5"> </TabPanel>
           <TabPanel value="6"></TabPanel>
 
-          <Button variant="contained" sx={{backgroundColor:"#2AA8FF"}} >My Bookings</Button>
+          <Button onClick={HandleBookingClick} variant="contained" sx={{backgroundColor:"#2AA8FF"}} >My Bookings</Button>
         </TabContext>
       </div>
     </div>
